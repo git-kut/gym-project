@@ -7,6 +7,8 @@ import image6 from "@/assets/image6.png"
 import HText from "@/shared/HText"
 import { motion } from "framer-motion"
 import  Class from "./Class"
+import SideScroller from "@/shared/SideScroller"
+
 
 
 type ClassType = {
@@ -77,18 +79,20 @@ const OurClasses = ({ setSelectedPage }: Props) => {
             </p>
           </div>
         </motion.div>
-        <div className="mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden">
-          <ul className="w-[2800px] whitespace-nowrap">
-            {classes.map((item, index) =>(
-              <Class
-              key={index}
-              name={item.name}
-              description={item.description}
-              image={item.image}
-              />
-            ))}
-          </ul>
-        </div>
+        <SideScroller>
+          <div className="mt-10 h-[auto] w-full overflow-x-auto overflow-y-hidden">
+            <ul className="w-[2800px] whitespace-nowrap">
+              {classes.map((item, index) =>(
+                <Class
+                key={index}
+                name={item.name}
+                description={item.description}
+                image={item.image}
+                />
+              ))}
+            </ul>
+          </div>
+        </SideScroller>
       </motion.div>
     </section>
   )

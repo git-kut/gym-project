@@ -49,7 +49,7 @@ const Benefits = ({setSelectedPage}: Props) => {
     >
       <motion.div onViewportEnter={() => setSelectedPage('benefits')}>  
         <motion.div 
-          className="md:my-5 text-sm"
+          className="md:my-5 text-m"
           initial="hidden" 
           whileInView="visible"
           viewport={{once: true, amount: 0.5}}

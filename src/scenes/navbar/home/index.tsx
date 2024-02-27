@@ -39,7 +39,7 @@ const Home = ({setSelectedPage}: Props) => {
                   <img alt='Home Page Text' src={HomePageText} />
                 </div>
               </div>
-                <p className="mt-8 text-sm">
+                <p className="mt-8 text-m">
                   Unrivaled gym, unparalleled training, and world-class studios – 
                   shape your dream body with us. Achieve your fitness goals now.
                 </p>
@@ -78,8 +78,8 @@ const Home = ({setSelectedPage}: Props) => {
         <div className="h-[150px] w-full bg-primary-100 py-12">
           <div className="mx-auto w-5/6">
             <div className="flex items-center justify-center gap-20">
-              <img alt="Redbull Sponsor Logo" src={SponsorRedbull} />
               <img alt="Forbes Sponsor Logo" src={SponsorForbes}/>
+              <img alt="Redbull Sponsor Logo" src={SponsorRedbull} />
               <img alt="Fortune Sponsor Logo" src={SponsorFortune}/>
             </div>
           </div>

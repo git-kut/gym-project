@@ -23,7 +23,7 @@ const ContactUs = ({setSelectedPage}: Props) => {
     }
   }
 
-  const inputStyle = "mt-5 w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white";
+  const inputStyle = "mt-5 w-full rounded-lg bg-primary-100 px-5 py-3 placeholder-black";
 
   return (
     <section id="contactus" className="mx-auto w-5/6 py-24">
@@ -39,7 +39,7 @@ const ContactUs = ({setSelectedPage}: Props) => {
         }}
         >
           <HText>
-            <span className="text-primary-500">JOIN NOW </span>
+            <span className="text-primary-300">JOIN NOW </span>
             TO GET IN SHAPE
           </HText>
           <p className="my-5">
@@ -112,7 +112,7 @@ const ContactUs = ({setSelectedPage}: Props) => {
               </p>
             )}
 
-          <button type="submit" className="mt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white hover:bg-primary-500">
+          <button type="submit" className="mt-5 rounded-lg bg-primary-300 px-20 py-3 transition duration-500 hover:text-white hover:bg-secondary-500">
           SUBMIT
           </button>
           </form>
