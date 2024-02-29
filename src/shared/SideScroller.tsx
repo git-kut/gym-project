@@ -45,7 +45,7 @@ const SideScroller = ({children}: Props) => {
     }
 
   return (
-    <div className="w-5/6 mx-auto" ref={ourRef} onMouseDown={handleDragStart} onMouseUp={handleDragEnd} onMouseMove={handleDrag}>
+    <div className={"md:w-5/6 mx-auto"} ref={ourRef} onMouseDown={handleDragStart} onMouseUp={handleDragEnd} onMouseMove={handleDrag}>
       {children}
     </div>
   );
